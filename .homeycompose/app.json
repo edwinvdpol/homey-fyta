@@ -1,0 +1,71 @@
+{
+  "id": "de.fyta",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "platforms": [
+    "local"
+  ],
+  "sdk": 3,
+  "brandColor": "#034D3A",
+  "name": {
+    "en": "FYTA"
+  },
+  "description": {
+    "en": "The smart fitness tracker for plants",
+    "nl": "De slimme fitnesstracker voor planten"
+  },
+  "category": [
+    "internet"
+  ],
+  "tags": {
+    "en": [
+      "fyta",
+      "plant",
+      "care",
+      "nurture",
+      "voice",
+      "beam",
+      "hub"
+    ],
+    "nl": [
+      "fyta",
+      "plant",
+      "verzorgen",
+      "verzorging",
+      "stem",
+      "beam",
+      "hub"
+    ]
+  },
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Edwin van de Pol",
+    "email": "developer@edwinvandepol.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Edwin van de Pol",
+        "email": "developer@edwinvandepol.nl"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "edwinvdpol"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/107367"
+  },
+  "homeyCommunityTopicId": 107367,
+  "homepage": "https://fyta.de",
+  "support": "mailto:developer@edwinvandepol.nl"
+}

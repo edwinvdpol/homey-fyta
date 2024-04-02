@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "The pH state changed",
+    "nl": "De pH status is veranderd"
+  },
+  "hint": {
+    "en": "This flowcard triggers when the pH state was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de pH status veranderd werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=beam&capabilities=status_ph"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "errors": {
+    "401": "Inloggegevens van de FYTA API zijn onjuist",
+    "403": "FYTA API heeft de toegang tot dit apparaat geweigerd",
+    "404": "Apparaat is niet gevonden in FYTA account",
+    "50x": "FYTA API is niet beschikbaar",
+    "network": "FYTA API is niet bereikbaar",
+    "unknown": "Er is een onbekende fout opgetreden"
+  }
+}

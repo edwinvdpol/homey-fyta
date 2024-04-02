@@ -1,0 +1,8 @@
+{
+  "name": {
+    "en": "Beam"
+  },
+  "$extends": [
+    "defaults"
+  ]
+}

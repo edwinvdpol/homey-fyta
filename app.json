@@ -1,0 +1,1247 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "de.fyta",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "platforms": [
+    "local"
+  ],
+  "sdk": 3,
+  "brandColor": "#034D3A",
+  "name": {
+    "en": "FYTA"
+  },
+  "description": {
+    "en": "The smart fitness tracker for plants",
+    "nl": "De slimme fitnesstracker voor planten"
+  },
+  "category": [
+    "internet"
+  ],
+  "tags": {
+    "en": [
+      "fyta",
+      "plant",
+      "care",
+      "nurture",
+      "voice",
+      "beam",
+      "hub"
+    ],
+    "nl": [
+      "fyta",
+      "plant",
+      "verzorgen",
+      "verzorging",
+      "stem",
+      "beam",
+      "hub"
+    ]
+  },
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Edwin van de Pol",
+    "email": "developer@edwinvandepol.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Edwin van de Pol",
+        "email": "developer@edwinvandepol.nl"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "edwinvdpol"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/107367"
+  },
+  "homeyCommunityTopicId": 107367,
+  "homepage": "https://fyta.de",
+  "support": "mailto:developer@edwinvandepol.nl",
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "The light value changed",
+          "nl": "De licht waarde is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the light value was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de licht waarde veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "measure_light",
+            "title": {
+              "en": "Light value",
+              "nl": "licht waarde"
+            },
+            "example": 20
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=measure_light"
+          }
+        ],
+        "id": "measure_light_changed"
+      },
+      {
+        "title": {
+          "en": "The moisture changed",
+          "nl": "De vochtigheid is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the moisture was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de vochtigheid veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "measure_moisture",
+            "title": {
+              "en": "Moisture",
+              "nl": "Vochtigheid"
+            },
+            "example": 20
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=measure_moisture"
+          }
+        ],
+        "id": "measure_moisture_changed"
+      },
+      {
+        "title": {
+          "en": "The pH value changed",
+          "nl": "De pH waarde is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the pH value was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de pH waarde veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "measure_ph",
+            "title": {
+              "en": "pH value",
+              "nl": "pH waarde"
+            },
+            "example": 6
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=measure_ph"
+          }
+        ],
+        "id": "measure_ph_changed"
+      },
+      {
+        "title": {
+          "en": "The salinity changed",
+          "nl": "Het zoutgehalte is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the salinity was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer het zoutgehalte veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "measure_salinity",
+            "title": {
+              "en": "Salinity",
+              "nl": "Zoutgehalte"
+            },
+            "example": 1
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=measure_salinity"
+          }
+        ],
+        "id": "measure_salinity_changed"
+      },
+      {
+        "title": {
+          "en": "The light state changed",
+          "nl": "De licht status is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the light state was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de licht status veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_light"
+          }
+        ],
+        "id": "status_light_changed"
+      },
+      {
+        "title": {
+          "en": "The moisture state changed",
+          "nl": "De vochtigheid status is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the moisture state was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de vochtigheid status veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_moisture"
+          }
+        ],
+        "id": "status_moisture_changed"
+      },
+      {
+        "title": {
+          "en": "The nutrients state changed",
+          "nl": "De voedingsstoffen status is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the nutrients state was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de voedingsstoffen status veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_nutrients"
+          }
+        ],
+        "id": "status_nutrients_changed"
+      },
+      {
+        "title": {
+          "en": "The pH state changed",
+          "nl": "De pH status is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the pH state was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de pH status veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_ph"
+          }
+        ],
+        "id": "status_ph_changed"
+      },
+      {
+        "title": {
+          "en": "The salinity state changed",
+          "nl": "De zoutgehalte status is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the salinity state was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de zoutgehalte status veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_salinity"
+          }
+        ],
+        "id": "status_salinity_changed"
+      },
+      {
+        "title": {
+          "en": "The temperature state changed",
+          "nl": "De temperatuur status is veranderd"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the temperature state was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de temperatuur status veranderd werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_temperature"
+          }
+        ],
+        "id": "status_temperature_changed"
+      }
+    ],
+    "conditions": [
+      {
+        "title": {
+          "en": "Light state !{{is|is not}}",
+          "nl": "Licht status !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Light state !{{is|is not}} [[status_light]]",
+          "nl": "Licht status !{{is|is niet}} [[status_light]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "status_light",
+            "title": {
+              "en": "status"
+            },
+            "values": [
+              {
+                "id": "too_low",
+                "title": {
+                  "en": "Too low",
+                  "nl": "Te laag"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "perfect",
+                "title": {
+                  "en": "Perfect"
+                }
+              },
+              {
+                "id": "high",
+                "title": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "too_high",
+                "title": {
+                  "en": "Too high",
+                  "nl": "Te hoog"
+                }
+              },
+              {
+                "id": "unknown",
+                "title": {
+                  "en": "Unknown",
+                  "nl": "Onbekend"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_light"
+          }
+        ],
+        "id": "status_light"
+      },
+      {
+        "title": {
+          "en": "Moisture state !{{is|is not}}",
+          "nl": "Vochtigheid status !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Moisture state !{{is|is not}} [[status_moisture]]",
+          "nl": "Vochtigheid status !{{is|is niet}} [[status_moisture]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "status_moisture",
+            "title": {
+              "en": "status"
+            },
+            "values": [
+              {
+                "id": "too_low",
+                "title": {
+                  "en": "Too low",
+                  "nl": "Te laag"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "perfect",
+                "title": {
+                  "en": "Perfect"
+                }
+              },
+              {
+                "id": "high",
+                "title": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "too_high",
+                "title": {
+                  "en": "Too high",
+                  "nl": "Te hoog"
+                }
+              },
+              {
+                "id": "unknown",
+                "title": {
+                  "en": "Unknown",
+                  "nl": "Onbekend"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_moisture"
+          }
+        ],
+        "id": "status_moisture"
+      },
+      {
+        "title": {
+          "en": "Nutrients state !{{is|is not}}",
+          "nl": "Voedingsstoffen status !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Nutrients state !{{is|is not}} [[status_nutrients]]",
+          "nl": "Voedingsstoffen status !{{is|is niet}} [[status_nutrients]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "status_nutrients",
+            "title": {
+              "en": "status"
+            },
+            "values": [
+              {
+                "id": "too_low",
+                "title": {
+                  "en": "Too low",
+                  "nl": "Te laag"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "perfect",
+                "title": {
+                  "en": "Perfect"
+                }
+              },
+              {
+                "id": "high",
+                "title": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "too_high",
+                "title": {
+                  "en": "Too high",
+                  "nl": "Te hoog"
+                }
+              },
+              {
+                "id": "unknown",
+                "title": {
+                  "en": "Unknown",
+                  "nl": "Onbekend"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_nutrients"
+          }
+        ],
+        "id": "status_nutrients"
+      },
+      {
+        "title": {
+          "en": "pH state !{{is|is not}}",
+          "nl": "pH status !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "pH state !{{is|is not}} [[status_ph]]",
+          "nl": "pH status !{{is|is niet}} [[status_ph]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "status_ph",
+            "title": {
+              "en": "status"
+            },
+            "values": [
+              {
+                "id": "too_low",
+                "title": {
+                  "en": "Too low",
+                  "nl": "Te laag"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "perfect",
+                "title": {
+                  "en": "Perfect"
+                }
+              },
+              {
+                "id": "high",
+                "title": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "too_high",
+                "title": {
+                  "en": "Too high",
+                  "nl": "Te hoog"
+                }
+              },
+              {
+                "id": "unknown",
+                "title": {
+                  "en": "Unknown",
+                  "nl": "Onbekend"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_ph"
+          }
+        ],
+        "id": "status_ph"
+      },
+      {
+        "title": {
+          "en": "Salinity state !{{is|is not}}",
+          "nl": "Zoutgehalte status !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Salinity state !{{is|is not}} [[status_salinity]]",
+          "nl": "Zoutgehalte status !{{is|is niet}} [[status_salinity]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "status_salinity",
+            "title": {
+              "en": "status"
+            },
+            "values": [
+              {
+                "id": "too_low",
+                "title": {
+                  "en": "Too low",
+                  "nl": "Te laag"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "perfect",
+                "title": {
+                  "en": "Perfect"
+                }
+              },
+              {
+                "id": "high",
+                "title": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "too_high",
+                "title": {
+                  "en": "Too high",
+                  "nl": "Te hoog"
+                }
+              },
+              {
+                "id": "unknown",
+                "title": {
+                  "en": "Unknown",
+                  "nl": "Onbekend"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_salinity"
+          }
+        ],
+        "id": "status_salinity"
+      },
+      {
+        "title": {
+          "en": "Temperature state !{{is|is not}}",
+          "nl": "Temperatuur status !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Temperature state !{{is|is not}} [[status_temperature]]",
+          "nl": "Temperatuur status !{{is|is niet}} [[status_temperature]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "status_temperature",
+            "title": {
+              "en": "status"
+            },
+            "values": [
+              {
+                "id": "too_low",
+                "title": {
+                  "en": "Too low",
+                  "nl": "Te laag"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "perfect",
+                "title": {
+                  "en": "Perfect"
+                }
+              },
+              {
+                "id": "high",
+                "title": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "too_high",
+                "title": {
+                  "en": "Too high",
+                  "nl": "Te hoog"
+                }
+              },
+              {
+                "id": "unknown",
+                "title": {
+                  "en": "Unknown",
+                  "nl": "Onbekend"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=beam&capabilities=status_temperature"
+          }
+        ],
+        "id": "status_temperature"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "class": "sensor",
+      "images": {
+        "small": "/drivers/beam/assets/images/small.png",
+        "large": "/drivers/beam/assets/images/large.png"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "capabilities": [
+        "measure_battery",
+        "measure_temperature",
+        "measure_salinity",
+        "measure_moisture",
+        "measure_light",
+        "measure_ph",
+        "status_temperature",
+        "status_nutrients",
+        "status_salinity",
+        "status_moisture",
+        "status_light",
+        "status_ph"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "pair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "../../../assets/logo.png"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "../../../assets/logo.png"
+          }
+        }
+      ],
+      "name": {
+        "en": "Beam"
+      },
+      "id": "beam",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "General",
+            "nl": "Algemeen"
+          },
+          "children": [
+            {
+              "id": "scientific_name",
+              "type": "label",
+              "label": {
+                "en": "Scientific name",
+                "nl": "Wetenschappelijke naam"
+              },
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Information",
+            "nl": "Informatie"
+          },
+          "children": [
+            {
+              "id": "sensor_version",
+              "type": "label",
+              "label": {
+                "en": "Sensor firmware"
+              },
+              "value": "-"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "measure_light": {
+      "type": "number",
+      "title": {
+        "en": "Light value",
+        "nl": "Licht waarde"
+      },
+      "units": {
+        "en": "μmol"
+      },
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/light.svg",
+      "decimals": 2,
+      "insights": true,
+      "chartType": "spline",
+      "getable": true,
+      "setable": false
+    },
+    "measure_moisture": {
+      "type": "number",
+      "title": {
+        "en": "Moisture",
+        "nl": "Vochtigheid"
+      },
+      "units": {
+        "en": "%"
+      },
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/moisture.svg",
+      "decimals": 2,
+      "insights": true,
+      "chartType": "spline",
+      "getable": true,
+      "setable": false
+    },
+    "measure_ph": {
+      "type": "number",
+      "title": {
+        "en": "pH value",
+        "nl": "pH waarde"
+      },
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/ph.svg",
+      "decimals": 2,
+      "insights": true,
+      "chartType": "spline",
+      "getable": true,
+      "setable": false
+    },
+    "measure_salinity": {
+      "type": "number",
+      "title": {
+        "en": "Salinity",
+        "nl": "Zoutgehalte"
+      },
+      "units": {
+        "en": "mS/cm"
+      },
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/salinity.svg",
+      "decimals": 2,
+      "insights": true,
+      "chartType": "spline",
+      "getable": true,
+      "setable": false
+    },
+    "status_light": {
+      "type": "enum",
+      "title": {
+        "en": "Light state",
+        "nl": "Licht status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": null,
+      "values": [
+        {
+          "id": "too_low",
+          "title": {
+            "en": "Too low",
+            "nl": "Te laag"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "perfect",
+          "title": {
+            "en": "Perfect"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "too_high",
+          "title": {
+            "en": "Too high",
+            "nl": "Te hoog"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend"
+          }
+        }
+      ]
+    },
+    "status_moisture": {
+      "type": "enum",
+      "title": {
+        "en": "Moisture state",
+        "nl": "Vochtigheid status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": null,
+      "values": [
+        {
+          "id": "too_low",
+          "title": {
+            "en": "Too low",
+            "nl": "Te laag"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "perfect",
+          "title": {
+            "en": "Perfect"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "too_high",
+          "title": {
+            "en": "Too high",
+            "nl": "Te hoog"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend"
+          }
+        }
+      ]
+    },
+    "status_nutrients": {
+      "type": "enum",
+      "title": {
+        "en": "Nutrients state",
+        "nl": "Voedingsstoffen status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": null,
+      "values": [
+        {
+          "id": "too_low",
+          "title": {
+            "en": "Too low",
+            "nl": "Te laag"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "perfect",
+          "title": {
+            "en": "Perfect"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "too_high",
+          "title": {
+            "en": "Too high",
+            "nl": "Te hoog"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend"
+          }
+        }
+      ]
+    },
+    "status_ph": {
+      "type": "enum",
+      "title": {
+        "en": "pH state",
+        "nl": "pH status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": null,
+      "values": [
+        {
+          "id": "too_low",
+          "title": {
+            "en": "Too low",
+            "nl": "Te laag"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "perfect",
+          "title": {
+            "en": "Perfect"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "too_high",
+          "title": {
+            "en": "Too high",
+            "nl": "Te hoog"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend"
+          }
+        }
+      ]
+    },
+    "status_salinity": {
+      "type": "enum",
+      "title": {
+        "en": "Salinity state",
+        "nl": "Zoutgehalte status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": null,
+      "values": [
+        {
+          "id": "too_low",
+          "title": {
+            "en": "Too low",
+            "nl": "Te laag"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "perfect",
+          "title": {
+            "en": "Perfect"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "too_high",
+          "title": {
+            "en": "Too high",
+            "nl": "Te hoog"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend"
+          }
+        }
+      ]
+    },
+    "status_temperature": {
+      "type": "enum",
+      "title": {
+        "en": "Temperature state",
+        "nl": "Temperatuur status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": null,
+      "values": [
+        {
+          "id": "too_low",
+          "title": {
+            "en": "Too low",
+            "nl": "Te laag"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "perfect",
+          "title": {
+            "en": "Perfect"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "too_high",
+          "title": {
+            "en": "Too high",
+            "nl": "Te hoog"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend"
+          }
+        }
+      ]
+    }
+  }
+}

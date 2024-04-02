@@ -1,0 +1,31 @@
+{
+  "title": {
+    "en": "The pH value changed",
+    "nl": "De pH waarde is veranderd"
+  },
+  "hint": {
+    "en": "This flowcard triggers when the pH value was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de pH waarde veranderd werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "tokens": [
+    {
+      "type": "number",
+      "name": "measure_ph",
+      "title": {
+        "en": "pH value",
+        "nl": "pH waarde"
+      },
+      "example": 6
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=beam&capabilities=measure_ph"
+    }
+  ]
+}

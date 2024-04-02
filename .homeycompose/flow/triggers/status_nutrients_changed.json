@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "The nutrients state changed",
+    "nl": "De voedingsstoffen status is veranderd"
+  },
+  "hint": {
+    "en": "This flowcard triggers when the nutrients state was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de voedingsstoffen status veranderd werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=beam&capabilities=status_nutrients"
+    }
+  ]
+}

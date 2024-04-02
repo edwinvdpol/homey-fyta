@@ -1,0 +1,17 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Moisture",
+    "nl": "Vochtigheid"
+  },
+  "units": {
+    "en": "%"
+  },
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/moisture.svg",
+  "decimals": 2,
+  "insights": true,
+  "chartType": "spline",
+  "getable": true,
+  "setable": false
+}

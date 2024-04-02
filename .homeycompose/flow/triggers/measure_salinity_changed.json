@@ -1,0 +1,31 @@
+{
+  "title": {
+    "en": "The salinity changed",
+    "nl": "Het zoutgehalte is veranderd"
+  },
+  "hint": {
+    "en": "This flowcard triggers when the salinity was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer het zoutgehalte veranderd werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "tokens": [
+    {
+      "type": "number",
+      "name": "measure_salinity",
+      "title": {
+        "en": "Salinity",
+        "nl": "Zoutgehalte"
+      },
+      "example": 1
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=beam&capabilities=measure_salinity"
+    }
+  ]
+}

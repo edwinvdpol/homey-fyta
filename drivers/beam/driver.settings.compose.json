@@ -1,0 +1,26 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "General",
+      "nl": "Algemeen"
+    },
+    "children": [
+      {
+        "$extends": "scientific_name"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Information",
+      "nl": "Informatie"
+    },
+    "children": [
+      {
+        "$extends": "sensor_version"
+      }
+    ]
+  }
+]

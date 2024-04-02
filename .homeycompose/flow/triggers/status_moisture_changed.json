@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "The moisture state changed",
+    "nl": "De vochtigheid status is veranderd"
+  },
+  "hint": {
+    "en": "This flowcard triggers when the moisture state was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de vochtigheid status veranderd werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=beam&capabilities=status_moisture"
+    }
+  ]
+}

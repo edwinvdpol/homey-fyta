@@ -1,0 +1,70 @@
+{
+  "title": {
+    "en": "Temperature state !{{is|is not}}",
+    "nl": "Temperatuur status !{{is|is niet}}"
+  },
+  "titleFormatted": {
+    "en": "Temperature state !{{is|is not}} [[status_temperature]]",
+    "nl": "Temperatuur status !{{is|is niet}} [[status_temperature]]"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "dropdown",
+      "name": "status_temperature",
+      "title": {
+        "en": "status"
+      },
+      "values": [
+        {
+          "id": "too_low",
+          "title": {
+            "en": "Too low",
+            "nl": "Te laag"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "perfect",
+          "title": {
+            "en": "Perfect"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "too_high",
+          "title": {
+            "en": "Too high",
+            "nl": "Te hoog"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend"
+          }
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=beam&capabilities=status_temperature"
+    }
+  ]
+}

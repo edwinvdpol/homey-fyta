@@ -1,0 +1,17 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Light value",
+    "nl": "Licht waarde"
+  },
+  "units": {
+    "en": "μmol"
+  },
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/light.svg",
+  "decimals": 2,
+  "insights": true,
+  "chartType": "spline",
+  "getable": true,
+  "setable": false
+}

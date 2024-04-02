@@ -1,0 +1,70 @@
+{
+  "title": {
+    "en": "Light state !{{is|is not}}",
+    "nl": "Licht status !{{is|is niet}}"
+  },
+  "titleFormatted": {
+    "en": "Light state !{{is|is not}} [[status_light]]",
+    "nl": "Licht status !{{is|is niet}} [[status_light]]"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "dropdown",
+      "name": "status_light",
+      "title": {
+        "en": "status"
+      },
+      "values": [
+        {
+          "id": "too_low",
+          "title": {
+            "en": "Too low",
+            "nl": "Te laag"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "perfect",
+          "title": {
+            "en": "Perfect"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "too_high",
+          "title": {
+            "en": "Too high",
+            "nl": "Te hoog"
+          }
+        },
+        {
+          "id": "unknown",
+          "title": {
+            "en": "Unknown",
+            "nl": "Onbekend"
+          }
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=beam&capabilities=status_light"
+    }
+  ]
+}

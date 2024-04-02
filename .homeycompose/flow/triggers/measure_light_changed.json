@@ -1,0 +1,31 @@
+{
+  "title": {
+    "en": "The light value changed",
+    "nl": "De licht waarde is veranderd"
+  },
+  "hint": {
+    "en": "This flowcard triggers when the light value was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de licht waarde veranderd werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "tokens": [
+    {
+      "type": "number",
+      "name": "measure_light",
+      "title": {
+        "en": "Light value",
+        "nl": "licht waarde"
+      },
+      "example": 20
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=beam&capabilities=measure_light"
+    }
+  ]
+}

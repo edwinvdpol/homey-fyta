@@ -1,0 +1,10 @@
+{
+  "errors": {
+    "401": "FYTA API credentials are incorrect",
+    "403": "FYTA API has denied access to this device",
+    "404": "Device not found in FYTA account",
+    "50x": "FYTA API is unavailable",
+    "network": "FYTA API is unreachable",
+    "unknown": "An unknown error has occurred"
+  }
+}

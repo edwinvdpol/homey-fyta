@@ -1,0 +1,17 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Salinity",
+    "nl": "Zoutgehalte"
+  },
+  "units": {
+    "en": "mS/cm"
+  },
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/salinity.svg",
+  "decimals": 2,
+  "insights": true,
+  "chartType": "spline",
+  "getable": true,
+  "setable": false
+}

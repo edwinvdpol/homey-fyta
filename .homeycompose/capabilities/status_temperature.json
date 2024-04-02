@@ -1,0 +1,53 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Temperature state",
+    "nl": "Temperatuur status"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": null,
+  "values": [
+    {
+      "id": "too_low",
+      "title": {
+        "en": "Too low",
+        "nl": "Te laag"
+      }
+    },
+    {
+      "id": "low",
+      "title": {
+        "en": "Low",
+        "nl": "Laag"
+      }
+    },
+    {
+      "id": "perfect",
+      "title": {
+        "en": "Perfect"
+      }
+    },
+    {
+      "id": "high",
+      "title": {
+        "en": "High",
+        "nl": "Hoog"
+      }
+    },
+    {
+      "id": "too_high",
+      "title": {
+        "en": "Too high",
+        "nl": "Te hoog"
+      }
+    },
+    {
+      "id": "unknown",
+      "title": {
+        "en": "Unknown",
+        "nl": "Onbekend"
+      }
+    }
+  ]
+}
