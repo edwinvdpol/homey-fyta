@@ -75,10 +75,7 @@ class Plant {
       data: {
         id: this.id,
       },
-      settings: {
-        scientific_name: this.scientific_name,
-        sensor_version: this.sensor_version,
-      },
+      settings: this.settings,
     };
   }
 
