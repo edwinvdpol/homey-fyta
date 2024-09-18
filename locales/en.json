@@ -1,4 +1,7 @@
 {
+  "authentication": {
+    "connecting": "Connecting..."
+  },
   "error": {
     "401": "FYTA API credentials are incorrect",
     "403": "FYTA API has denied access to this device",
