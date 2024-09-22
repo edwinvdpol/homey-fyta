@@ -1,7 +1,6 @@
 'use strict';
 
 const { Status } = require('../lib/Enums');
-const { filled } = require('../lib/Utils');
 
 class Plant {
 
@@ -11,11 +10,11 @@ class Plant {
    * @constructor
    */
   constructor(data) {
-    this.id = data.id;
+    this.id = data.id || null;
     this.measurements = data.measurements || null;
-    this.nickname = data.nickname;
-    this.scientific_name = data.scientific_name;
-    this.sensor_version = data.sensor?.version;
+    this.nickname = data.nickname || null;
+    this.scientific_name = data.scientific_name || '-';
+    this.sensor_version = data.sensor?.version || '-';
     this.status = data.status || 0;
   }
 
@@ -60,7 +59,7 @@ class Plant {
       status_ph: this.measureStatus('ph'),
       status_salinity: this.measureStatus('salinity'),
       status_temperature: this.measureStatus('temperature'),
-    }).filter(([_, v]) => v || typeof v === 'boolean'));
+    }).filter(([_, v]) => v));
   }
 
   /**
@@ -83,14 +82,15 @@ class Plant {
   /**
    * Return device settings.
    *
-   * @return {Object}
+   * @return {{
+   *  sensor_version: string,
+   *  scientific_name: string
+   * }}
    */
   get settings() {
-    if (!this.valid) return {};
-
     return {
-      scientific_name: this.scientific_name || '-',
-      sensor_version: this.sensor_version || '-',
+      scientific_name: this.scientific_name,
+      sensor_version: this.sensor_version,
     };
   }
 
@@ -100,7 +100,7 @@ class Plant {
    * @return {boolean}
    */
   get valid() {
-    return filled(this.id) && filled(this.nickname);
+    return this.id && this.active;
   }
 
   /**
