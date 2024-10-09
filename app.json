@@ -792,7 +792,23 @@
           "id": "login_credentials",
           "template": "login_credentials",
           "options": {
-            "logo": "../../../assets/logo.png"
+            "logo": "../../../assets/logo.png",
+            "usernameLabel": {
+              "en": "Username",
+              "nl": "Gebruikersnaam"
+            },
+            "usernamePlaceholder": {
+              "en": "example@email.com",
+              "nl": "voorbeeld@email.nl"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "nl": "Wachtwoord"
+            },
+            "passwordPlaceholder": {
+              "en": "Password",
+              "nl": "Wachtwoord"
+            }
           }
         },
         {
@@ -812,7 +828,23 @@
           "id": "login_credentials",
           "template": "login_credentials",
           "options": {
-            "logo": "../../../assets/logo.png"
+            "logo": "../../../assets/logo.png",
+            "usernameLabel": {
+              "en": "Username",
+              "nl": "Gebruikersnaam"
+            },
+            "usernamePlaceholder": {
+              "en": "example@email.com",
+              "nl": "voorbeeld@email.nl"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "nl": "Wachtwoord"
+            },
+            "passwordPlaceholder": {
+              "en": "Password",
+              "nl": "Wachtwoord"
+            }
           }
         }
       ],
