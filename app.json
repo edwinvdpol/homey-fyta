@@ -22,20 +22,28 @@
     "en": [
       "fyta",
       "plant",
+      "plants",
       "care",
       "nurture",
       "voice",
+      "smart",
       "beam",
-      "hub"
+      "beams",
+      "hub",
+      "sensor"
     ],
     "nl": [
       "fyta",
       "plant",
+      "planten",
       "verzorgen",
       "verzorging",
       "stem",
+      "slim",
       "beam",
-      "hub"
+      "beams",
+      "hub",
+      "sensor"
     ]
   },
   "images": {
@@ -68,7 +76,7 @@
   },
   "homeyCommunityTopicId": 107367,
   "homepage": "https://fyta.de",
-  "support": "mailto:developer@edwinvandepol.nl",
+  "support": "mailto:hello@fyta.de",
   "flow": {
     "triggers": [
       {
