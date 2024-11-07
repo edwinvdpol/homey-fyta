@@ -8,7 +8,8 @@
     "nl": "Deze flowcard wordt geactiveerd wanneer de pH waarde veranderd werd."
   },
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "tokens": [
     {

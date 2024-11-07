@@ -8,7 +8,8 @@
     "nl": "Voedingsstoffen status !{{is|is niet}} [[status_nutrients]]"
   },
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "args": [
     {

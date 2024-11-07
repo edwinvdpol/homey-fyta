@@ -8,7 +8,8 @@
     "nl": "Temperatuur status !{{is|is niet}} [[status_temperature]]"
   },
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "args": [
     {

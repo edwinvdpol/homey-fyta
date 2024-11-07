@@ -8,7 +8,8 @@
     "nl": "Zoutgehalte status !{{is|is niet}} [[status_salinity]]"
   },
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "args": [
     {

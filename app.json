@@ -4,7 +4,8 @@
   "version": "1.0.2",
   "compatibility": ">=7.4.0",
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "sdk": 3,
   "brandColor": "#034D3A",
@@ -89,7 +90,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de licht waarde veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "tokens": [
           {
@@ -121,7 +123,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de vochtigheid veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "tokens": [
           {
@@ -153,7 +156,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de pH waarde veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "tokens": [
           {
@@ -185,7 +189,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer het zoutgehalte veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "tokens": [
           {
@@ -217,7 +222,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de licht status veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -238,7 +244,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de vochtigheid status veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -259,7 +266,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de voedingsstoffen status veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -280,7 +288,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de pH status veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -301,7 +310,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de zoutgehalte status veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -322,7 +332,8 @@
           "nl": "Deze flowcard wordt geactiveerd wanneer de temperatuur status veranderd werd."
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -345,7 +356,8 @@
           "nl": "Licht status !{{is|is niet}} [[status_light]]"
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -416,7 +428,8 @@
           "nl": "Vochtigheid status !{{is|is niet}} [[status_moisture]]"
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -487,7 +500,8 @@
           "nl": "Voedingsstoffen status !{{is|is niet}} [[status_nutrients]]"
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -558,7 +572,8 @@
           "nl": "pH status !{{is|is niet}} [[status_ph]]"
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -629,7 +644,8 @@
           "nl": "Zoutgehalte status !{{is|is niet}} [[status_salinity]]"
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -700,7 +716,8 @@
           "nl": "Temperatuur status !{{is|is niet}} [[status_temperature]]"
         },
         "platforms": [
-          "local"
+          "local",
+          "cloud"
         ],
         "args": [
           {
@@ -771,7 +788,8 @@
         "large": "/drivers/beam/assets/images/large.png"
       },
       "platforms": [
-        "local"
+        "local",
+        "cloud"
       ],
       "connectivity": [
         "cloud"

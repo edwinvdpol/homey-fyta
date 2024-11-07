@@ -8,7 +8,8 @@
     "nl": "Vochtigheid status !{{is|is niet}} [[status_moisture]]"
   },
   "platforms": [
-    "local"
+    "local",
+    "cloud"
   ],
   "args": [
     {
