@@ -2,12 +2,10 @@
 
 ![Homey App Validation](https://github.com/edwinvdpol/homey-fyta/actions/workflows/validate.yml/badge.svg)
 
-The smart fitness tracker for plants.
+The FYTA Homey app seamlessly connects your FYTA plant sensor with the Homey smart home system, revolutionizing your plant care with real-time data insights and smart automation. This app provides detailed information on the moisture level, light exposure, temperature, and fertility of your plants, enabling you to maintain a thriving indoor garden effortlessly.
 
-Plant care is too much work? With FYTA you optimize your care routine. You'll soon feel like you're in a jungle camp, except you enjoy being there.
+With the FYTA Homey app, you can set up intelligent automations to optimize plant care. Receive notifications when your plants need watering or fertilization, adjust lighting conditions based on plant needs, or integrate with other smart devices to maintain an ideal environment for your greenery.
 
-Are you actually good with plants, but one of them is always bitching? With the help of targeted care tips, your problem plant will become your favorite plant.
+Whether you're passionate about maintaining a perfect indoor garden, reducing the guesswork in plant care, or extending your smart home ecosystem to include your plants, the FYTA Homey app brings smart plant management directly to your fingertips.
 
-### Login credentials
-
-You need an active FYTA account and Wi-Fi hub to use this app.
+To use this app, you need an active FYTA account and Wi-Fi hub.
