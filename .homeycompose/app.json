@@ -1,7 +1,7 @@
 {
   "id": "de.fyta",
   "version": "1.0.3",
-  "compatibility": ">=7.4.0",
+  "compatibility": ">=12.2.0",
   "platforms": [
     "local",
     "cloud"

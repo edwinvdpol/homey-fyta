@@ -2,7 +2,7 @@
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "de.fyta",
   "version": "1.0.3",
-  "compatibility": ">=7.4.0",
+  "compatibility": ">=12.2.0",
   "platforms": [
     "local",
     "cloud"
@@ -112,72 +112,6 @@
           }
         ],
         "id": "measure_light_changed"
-      },
-      {
-        "title": {
-          "en": "The moisture changed",
-          "nl": "De vochtigheid is veranderd"
-        },
-        "hint": {
-          "en": "This flowcard triggers when the moisture was changed.",
-          "nl": "Deze flowcard wordt geactiveerd wanneer de vochtigheid veranderd werd."
-        },
-        "platforms": [
-          "local",
-          "cloud"
-        ],
-        "tokens": [
-          {
-            "type": "number",
-            "name": "measure_moisture",
-            "title": {
-              "en": "Moisture",
-              "nl": "Vochtigheid"
-            },
-            "example": 20
-          }
-        ],
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=beam&capabilities=measure_moisture"
-          }
-        ],
-        "id": "measure_moisture_changed"
-      },
-      {
-        "title": {
-          "en": "The pH value changed",
-          "nl": "De pH waarde is veranderd"
-        },
-        "hint": {
-          "en": "This flowcard triggers when the pH value was changed.",
-          "nl": "Deze flowcard wordt geactiveerd wanneer de pH waarde veranderd werd."
-        },
-        "platforms": [
-          "local",
-          "cloud"
-        ],
-        "tokens": [
-          {
-            "type": "number",
-            "name": "measure_ph",
-            "title": {
-              "en": "pH value",
-              "nl": "pH waarde"
-            },
-            "example": 6
-          }
-        ],
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=beam&capabilities=measure_ph"
-          }
-        ],
-        "id": "measure_ph_changed"
       },
       {
         "title": {
@@ -929,37 +863,6 @@
       },
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/light.svg",
-      "decimals": 2,
-      "insights": true,
-      "chartType": "spline",
-      "getable": true,
-      "setable": false
-    },
-    "measure_moisture": {
-      "type": "number",
-      "title": {
-        "en": "Moisture",
-        "nl": "Vochtigheid"
-      },
-      "units": {
-        "en": "%"
-      },
-      "uiComponent": "sensor",
-      "icon": "/assets/capabilities/moisture.svg",
-      "decimals": 2,
-      "insights": true,
-      "chartType": "spline",
-      "getable": true,
-      "setable": false
-    },
-    "measure_ph": {
-      "type": "number",
-      "title": {
-        "en": "pH value",
-        "nl": "pH waarde"
-      },
-      "uiComponent": "sensor",
-      "icon": "/assets/capabilities/ph.svg",
       "decimals": 2,
       "insights": true,
       "chartType": "spline",
