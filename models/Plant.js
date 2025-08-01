@@ -11,6 +11,7 @@ class Plant {
    */
   constructor(data) {
     this.id = data.id || null;
+    this.has_sensor = data.sensor?.has_sensor || false;
     this.measurements = data.measurements || null;
     this.nickname = data.nickname || null;
     this.scientific_name = data.scientific_name || '-';
@@ -100,7 +101,7 @@ class Plant {
    * @return {boolean}
    */
   get valid() {
-    return this.id && this.active;
+    return this.id && this.active && this.has_sensor;
   }
 
   /**
