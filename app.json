@@ -808,10 +808,6 @@
           }
         }
       ],
-      "name": {
-        "en": "Beam"
-      },
-      "id": "beam",
       "settings": [
         {
           "type": "group",
@@ -848,7 +844,11 @@
             }
           ]
         }
-      ]
+      ],
+      "name": {
+        "en": "Beam"
+      },
+      "id": "beam"
     }
   ],
   "capabilities": {
