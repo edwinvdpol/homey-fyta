@@ -812,8 +812,8 @@
         {
           "type": "group",
           "label": {
-            "en": "General",
-            "nl": "Algemeen"
+            "en": "Plant",
+            "nl": "Plant"
           },
           "children": [
             {
@@ -830,8 +830,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Information",
-            "nl": "Informatie"
+            "en": "Product",
+            "nl": "Product"
           },
           "children": [
             {
