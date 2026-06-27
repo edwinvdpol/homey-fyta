@@ -817,6 +817,15 @@
           },
           "children": [
             {
+              "id": "identifier",
+              "type": "label",
+              "label": {
+                "en": "Identifier",
+                "nl": "Identificatie"
+              },
+              "value": "-"
+            },
+            {
               "id": "scientific_name",
               "type": "label",
               "label": {
