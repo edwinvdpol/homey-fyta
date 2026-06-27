@@ -1,8 +1,8 @@
 {
   "type": "label",
   "label": {
-    "en": "Identifier",
-    "nl": "Identificatie"
+    "en": "Sensor ID",
+    "nl": "Sensor ID"
   },
   "value": "-"
 }

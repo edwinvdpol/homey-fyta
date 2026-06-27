@@ -817,15 +817,6 @@
           },
           "children": [
             {
-              "id": "identifier",
-              "type": "label",
-              "label": {
-                "en": "Identifier",
-                "nl": "Identificatie"
-              },
-              "value": "-"
-            },
-            {
               "id": "scientific_name",
               "type": "label",
               "label": {
@@ -843,6 +834,15 @@
             "nl": "Product"
           },
           "children": [
+            {
+              "id": "sensor_id",
+              "type": "label",
+              "label": {
+                "en": "Sensor ID",
+                "nl": "Sensor ID"
+              },
+              "value": "-"
+            },
             {
               "id": "sensor_version",
               "type": "label",

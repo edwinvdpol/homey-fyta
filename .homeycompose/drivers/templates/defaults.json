@@ -100,9 +100,6 @@
       },
       "children": [
         {
-          "$extends": "identifier"
-        },
-        {
           "$extends": "scientific_name"
         }
       ]
@@ -114,6 +111,9 @@
         "nl": "Product"
       },
       "children": [
+        {
+          "$extends": "sensor_id"
+        },
         {
           "$extends": "sensor_version"
         }
